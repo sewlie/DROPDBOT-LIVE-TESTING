@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" game-content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/customFonts.css">
+    <link rel="stylesheet" href="../stylesheets/navbar.css">
+    <link rel="stylesheet" href="../stylesheets/game.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon_1.ico">
+</head>
+<body>
+  <nav>
+    <img class="nav-logo" src="../images/dropsbot_new_logo.png" 
+      onmouseover="this.src='../images/dropsbot_new_logo2.gif'" 
+      onmouseout="this.src='../images/dropsbot_new_logo.png'">
+    <div class="sidebar1">
+      <ul class="nav-games-ul">
+        <li class="nav-games-li"><p>GAMES</p></li>
+        <li class="nav-games-title"><img class="nav-games-logo" src="../images/gu.png" alt=""><p><a href="../game/godsUnchained">GODS UNCHAINED</a></p></li>
+        <li class="nav-games-title"><img class="nav-games-logo" src="../images/iluvium.png" alt=""><p><a href="../game/godsUnchained">ILLUVIUM</a></p></li>
+        <li class="nav-games-title"><img class="nav-games-logo" src="../images/cta.png" alt=""><p><a href="../game/godsUnchained">CROSS THE AGES</a></p></li>
+        <li class="nav-games-title selected-li"><img class="nav-games-logo" src="../images/gog.png" alt=""><p><a href="../game/guildofGuardians">GUILD OF GUARDIANS</a></p></li>
+      </ul>
+
+      <ul class="nav-games-ul-2">
+        <li class="nav-games-li-2"><p>LEADERBOARD</p></li>
+        <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/gold.png" alt="">&nbsp;&nbsp;VANGELOV</p></li>
+        <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/silver.png" alt="">&nbsp;&nbsp;EVILHOMER</p></li>
+        <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/bronze.png" alt="">&nbsp;&nbsp;RCKMTL</p></li>
+      </ul> 
+    </div>
+  </nav>
+    <div class="mainwindow2">
+        <div class="menu">
+            <ul class="nav-ul">
+                <h1 onclick="window.location = '/'">DROPSBOT</h1>
+                <li class="nav-li" onclick="window.location = '/profile'">PROFILE</li>
+                <li class="nav-li" onclick="window.location = '/profile/rewards'">REWARDS</li>
+            </ul>
+        </div>
+        <div class="game-content">
+            <h1>Guild of Guardians</h1>
+            <p>The roguelite mobile RPG set in a world on the brink of destruction. Players build their dream team<br> 
+                  of Guardians to battle against the corrupting threat of the Dread while earning epic rewards.</p>
+              <div class="content-wrapper">
+                <ul class="game-nav-ul">
+                    <li class="game-nav-li-3"><img src="../images/dc.png" class="game-bar-icon"><a href="https://discord.com/invite/gog" target="_blank">Join the Discord &nbsp;&#129141</a></li>
+                    <li class="game-nav-li-1"><img src="../images/gog.png" class="game-bar-icon"><a href="https://guildofguardians.com/" target="_blank">Register Now &nbsp;&#129141</a></li>
+                </ul>
+                <ul class="game-nav-ul">
+                  <li class="game-nav-li-4"><img src="../images/GUaward1.png" class="game-bar-icon2"></li>
+                </ul>
+                <ul class="game-nav-ul">
+                <li class="game-nav-li-4"><img src="../images/GUaward3.png" class="game-bar-icon2"></li>
+                </ul>
+              </div>
+            <div class="video-background"></div>
+            <video autoplay muted loop id="video-background">
+                <source src="../images/gogBG.mp4" type="video/mp4" loading="lazy"></video>
+            </div>
+    </div>
+</body>
+<script src="../functions/game.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

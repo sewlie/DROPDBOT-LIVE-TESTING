@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/customFonts.css">
+    <link rel="stylesheet" href="../stylesheets/navbar.css">
+    <link rel="stylesheet" href="../stylesheets/home.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon_1.ico">
+</head>
+<body>
+    <nav>
+        <img class="nav-logo" src="../images/dropsbot_new_logo.png" alt="">
+        <ul class="nav-ul">
+            <li class="nav-li selected-li" onclick="window.location = '/'">HOME</li>
+            <li class="nav-li" onclick="window.location = '/profile'">PROFILE</li>
+            <li class="nav-li" onclick="window.location = `/profile/rewards`">REWARDS</li>
+        </ul>
+        <ul class="nav-rewards-ul">
+            <li class="nav-rewards-li"><img class="nav-rewards-logo" src="../images/gods.png" alt=""><span id="gods-amount" class="nav-rewards-amount">--.--</span></li>
+            <li class="nav-rewards-li"><img class="nav-rewards-logo" src="../images/eth.png" alt=""><span id="eth-amount" class="nav-rewards-amount">-.---</span></li>
+        </ul>
+        <ul class="nav-games-ul">
+            <li class="nav-games-li"><p style="font-family: AkzReg;">GAMES</p></li>
+            <li class="nav-games-title"><p style="font-family: AkzLight;">GODS UNCHAINED</p></li>
+        </ul>
+    </nav>
+    <div class="mainwindow">
+        <h1 class="header">DROPSBOT</h1>
+        <div class="content">
+            <p>hoi</p>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/customFonts.css">
+    <link rel="stylesheet" href="../stylesheets/navbar.css">
+    <link rel="stylesheet" href="../stylesheets/profile.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon_1.ico">
+</head>
+<body>
+    <div class="too-small">ERROR - WINDOW TOO SMALL</div>
+    <div class="fullscreen-overlay"></div>
+    <nav>
+        <img class="nav-logo" src="../images/dropsbot_new_logo.png" alt="">
+        <div class="sidebar1">
+          <ul class="nav-games-ul">
+            <li class="nav-games-li"><p>GAMES</p></li>
+            <li class="nav-games-title"><img class="nav-games-logo" src="../images/gu.png" alt=""><p><a href="../game/godsUnchained">GODS UNCHAINED</a></p></li>
+            <li class="nav-games-title"><img class="nav-games-logo" src="../images/iluvium.png" alt=""><p><a href="../game/godsUnchained">ILLUVIUM</a></p></li>
+            <li class="nav-games-title"><img class="nav-games-logo" src="../images/cta.png" alt=""><p><a href="../game/godsUnchained">CROSS THE AGES</a></p></li>
+            <li class="nav-games-title"><img class="nav-games-logo" src="../images/gog.png" alt=""><p><a href="../game/guildofGuardians">GUILD OF GUARDIANS</a></p></li>
+          </ul>
+  
+          <ul class="nav-games-ul-2">
+            <li class="nav-games-li-2"><p>LEADERBOARD</p></li>
+            <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/gold.png" alt="">&nbsp;&nbsp;VANGELOV</p></li>
+            <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/silver.png" alt="">&nbsp;&nbsp;EVILHOMER</p></li>
+            <li class="nav-games-title-2"><p><img class="nav-rewards-logo-5" src="../images/bronze.png" alt="">&nbsp;&nbsp;RCKMTL</p></li>
+          </ul> 
+        </div>
+      </nav>
+
+      <img class="nav-logo-mobile" 
+      src="../images/dropsbot_new_logo.png" alt="" 
+      onmouseover="this.src='../images/dropsbot_new_logo2.gif'" 
+      onmouseout="this.src='../images/dropsbot_new_logo.png'">
+
+      <h1 class="logo-mobile" onclick="window.location = '/'">DROPSBOT</h1>
+      <div class="topnav" id="myTopnav">
+
+        
+        <div class="dropdown-content">
+            <a href="/profile" style="margin: 20vh 0; width: 250px;">Profile</a>
+            <a href="/profile/rewards" style="margin: 30vh 0;width: 250px;">Rewards</a>
+            <a href="https://dropsbot.gitbook.io/dropsbot-docs/" target="blank" style="margin: 40vh 0;width: 250px;">Documentation</a>
+        </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    <div class="mainwindow">
+        <div class="menu">
+            <ul class="nav-ul">
+                <h1 onclick="window.location = '/'">DROPSBOT</h1>
+                <li class="nav-li" onclick="window.location = '/profile'" style="text-decoration: underline; text-underline-offset: 13px;">PROFILE</li>
+                <li class="nav-li" onclick="window.location = '/profile/rewards'">REWARDS</li>
+            </ul>
+        </div>
+        <div class="profile-content">
+            <h1>Profile</h1>
+        </div>
+        <div class="input-wrapper1">
+            <ul class="game-select">
+                <li>
+                    <button class="game-button active">
+                        <div class="button-content">
+                            <img src="../images/GU logo2.png" class="game-icon2" alt="">
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button class="game-button2">
+                        <div class="button-content">
+                            <img src="../images/illuviumlogo.png" class="game-icon" alt="">
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button class="game-button2">
+                        <div class="button-content">
+                            <img src="../images/ctalogo.png" class="game-icon" alt="">
+                        </div>
+                    </button>
+                </li>
+                <li>
+                    <button class="game-button2">
+                        <div class="button-content">
+                            <img src="../images/goglogo.png" class="game-icon" alt="">
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="input-wrapper2">
+            <ul class="inputs">
+                <div class="socials">
+                        <h3>Connect your Twitch and Discord</h3>
+                    <ul class="socials-buttons">
+                        <li>
+                            <button class="bar-button" onclick="window.location.href='/auth/twitch'">
+                                <div class="button-content">
+                                    <img src="../images/ttv.png" class="bar-icon" alt="">
+                                        <span><%= user.twitch_username %></span>
+                                </div>
+                            </button>
+                        </li>
+                        <% if (user.discord_id) { %>
+                        <li>
+                            <button class="bar-button active" onclick="window.location.href='/auth/discord'">
+                                <div class="button-content">
+                                    <img src="../images/dc.png" class="bar-icon" alt="">
+                                        <span><%= user.discord_username %></span>
+                                </div>
+                            </button>
+                        </li>
+                        <% } else { %>
+                        <li>
+                            <button class="bar-button active" onclick="window.location.href='/auth/discord'">
+                                <div class="button-content">
+                                    <img src="../images/dc.png" class="bar-icon" alt="">
+                                        <span>Link Discord</span>
+                                </div>
+                            </button>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="ids">
+                    <h3>Paste your ETH address and GU Player ID</h3>
+                    <ul class="input-buttons">
+                        <li>
+                            <div class="input-container">
+                                <img src="../images/eth.png" class="bar-icon2" alt="">
+                                <input type="text" id="full_eth" placeholder="Paste your ETH address here" value="<%= user.eth_address %>" hidden>
+                                <input type="text" class="bar-input" id="eth_input" placeholder="Paste your ETH address here" value="...<%= user.eth_address.slice(-6) %>">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-container">
+                                <img src="../images/gu.png" class="bar-icon2" alt="">
+                                <input type="number" class="bar-input" id="player_input" placeholder="Paste your GU Player ID here" value="<%= user.player_id %>">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action-buttons">
+                    <ul>
+                        <li>
+                            <button id="submit_button" onclick="submit(JSON.parse('<%- JSON.stringify(user.twitch_id) %>'))">Save</button>
+                        </li>
+                    </ul>      
+                </div>
+                <div class="message-box" id="message-box" style="display: none;">
+                    <ul>
+                            <li><p id="status-input"></p></li>
+                    </ul>
+                </div>
+            </ul>
+                <div class="vertical-line"></div>
+                <div class="horizontal-line"></div>
+                <ul class="owner-rewards">
+
+                    <h3>Ownership Boosts</h3>
+                    <p class="owner-rewards-header">Owning certain digital collectibles boosts your Dropsbot airdrops</p>
+                    <h2>OWNED</h2>
+                    <ul class="unowned-list2" id="owned-list">
+                        <li><p>Loading...</p></li>
+                    </ul>
+                    <h2>UNOWNED</h2>
+                    <ul class="unowned-list" id="unowned-list">
+                        <li><p>Loading...</p></li>
+                    </ul>
+                </ul>
+            
+        </div>
+    </div>
+    <video id="background-video" autoplay loop muted poster="">
+        <source src="../images/VideoBG.mp4" type="video/mp4">
+    </video>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../functions/profile.js"></script>
+<script src="../functions/profile-style.js"></script>
+</html>

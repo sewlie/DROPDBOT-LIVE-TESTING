@@ -1,0 +1,29 @@
+@font-face {
+    font-family: PragmaticaExtendedBold;
+    src: url('../fonts/PragmaticaExtended-Bold.ttf');
+}
+@font-face {
+    font-family: PragmaticaBold;
+    src: url('../fonts/Pragmatica-Bold.ttf');
+}
+@font-face {
+    font-family: PragmaticaExtendedBook;
+    src: url('../fonts/PragmaticaExtended-Book.ttf');
+}
+@font-face {
+    font-family: PragmaticaBook;
+    src: url('../fonts/Pragmatica-Book.ttf');
+}
+/*New fonts*/
+@font-face {
+    font-family: AkzMd;
+    src: url('../fonts/AkzidenzGroteskBE-Md.otf');
+}
+@font-face {
+    font-family: AkzLight;
+    src: url('../fonts/AkzidenzGroteskBE-Light.otf');
+}
+@font-face {
+    font-family: AkzReg;
+    src: url('../fonts/AkzidenzGroteskBE-Regular.otf');
+}

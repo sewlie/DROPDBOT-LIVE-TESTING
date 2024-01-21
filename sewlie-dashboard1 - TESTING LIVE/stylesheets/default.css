@@ -1,0 +1,17 @@
+body {
+    background: url("../images/dropsbot_new_bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4c0E1F;
+}
+.header {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: PragmaticaBook;
+    letter-spacing: 1px; 
+}
+.content {
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 1000px;
+}
